@@ -1,0 +1,54 @@
+@extends('layouts.app')
+
+@section('content')
+    <!-- <form method="POST" action="{{ route('login') }}">
+        @csrf
+        <div class="my-12 mx-96 bg-white rounded py-4">
+        <h1 class="text-gray-800 text-2xl font-semibold mb-12 text-center">Login</h1>
+        <div class="py-2 px-6 flex flex-col">
+            <label for="email" class="text-gray-500 font-semibold mb-3">{{ __('E-Mail') }}</label>
+            <input 
+                name="email"
+                type="email"
+                placeholder="example@example.com"
+                class="border border-gray-200 shadow rounded-lg mb-6 p-3 w-full focus:outline-none"/>
+
+            <label for="password" class="text-gray-500 font-semibold mb-3">{{ __('Password') }}</label>
+            <input 
+                name="password"
+                type="password"
+                placeholder="*********"
+                class="border border-gray-200 shadow rounded-lg mb-3 p-3 w-full focus:outline-none" />
+
+            <button class="bg-blue-500 text-white font-semibold py-2 px-6 mt-3 mb-3 rounded-lg shadow-2xl">
+                {{ __('Login')}}
+            </button>
+        </div>
+        </div>
+    </form> -->
+
+    <form method="POST" action="{{ route('login') }}">
+    @csrf
+        <div class="bg-white rounded my-4 mx-12 md:my-8 md:mx-56 lg:my-12 lg:mx-96 py-4">
+            <h1 class="text-gray-800 text-xl md:text-2xl font-semibold mb-12 text-center">Login</h1>
+            <div class="flex flex-col mx-8">
+            <label for="email" class="text-gray-500 font-semibold mb-3">{{ __('E-Mail') }}</label>
+            <input 
+                name="email"
+                type="email"
+                placeholder="example@example.com"
+                class="border border-gray-200 shadow rounded-lg mb-6 p-3 w-full focus:outline-none" />
+
+            <label for="password" class="text-gray-500 font-semibold mb-3">{{ __('Password') }}</label>
+            <input 
+                name="password"
+                type="password"
+                placeholder="*********"
+                class="border border-gray-200 shadow rounded-lg mb-3 p-3 w-full focus:outline-none" />
+
+            <button class="bg-blue-500 text-white font-semibold py-2 px-6 mt-3 mb-3 rounded-lg shadow-2xl">
+                {{ __('Login')}}
+            </button>
+        </div>
+    </form>
+@endsection
